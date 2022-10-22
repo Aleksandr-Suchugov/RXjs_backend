@@ -2,7 +2,14 @@
   "name": "rx-js_backend",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Aleksandr-Suchugov/RXjs_backend.git",
+  "scripts": {
+    "prestart": "yarn install",
+    "start": "forever ./src/js/server.js",
+    "watch": "forever -w ./src/js/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aleksandr-Suchugov/RXjs_backend.git",
   "author": "aleksandr-suchugov <alex.coup@yandex.ru>",
   "license": "MIT",
   "dependencies": {
