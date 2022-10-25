@@ -1,21 +1,26 @@
 {
-  "name": "rx-js_backend",
+  "name": "back_end",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "**https://asuch-rxjs.herokuapp.com/**",
+  "main": "server.js",
   "scripts": {
-    "prestart": "yarn install",
+    "prestart": "npm install",
     "start": "forever ./src/js/server.js",
     "watch": "forever -w ./src/js/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aleksandr-Suchugov/RXjs_backend.git",
-  "author": "aleksandr-suchugov <alex.coup@yandex.ru>",
-  "license": "MIT",
+    "url": "git+https://github.com/Aleksandr-Suchugov/RXjs_backend.git"
+  },
+  "author": "aleksandr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aleksandr-Suchugov/RXjs_backend/issues"
+  },
+  "homepage": "https://github.com/Aleksandr-Suchugov/RXjs_backend#readme",
   "dependencies": {
-    "@faker-js/faker": "^7.6.0",
     "@koa/cors": "^4.0.0",
-    "faker": "^6.6.6",
+    "faker": "^5.5.3",
     "forever": "^4.0.3",
     "http": "^0.0.1-security",
     "koa": "^2.13.4",

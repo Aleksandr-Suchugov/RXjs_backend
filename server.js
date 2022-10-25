@@ -8,6 +8,9 @@ const faker = require('faker');
 
 const app = new Koa();
 
+// const public = path.join(__dirname, '/public')
+// app.use(koaStatic(public));
+
 const data = {
   "status": "ok",
   "timestamp": `${ new Date().toLocaleDateString() } ${ new Date().toLocaleTimeString() }`,
@@ -56,4 +59,4 @@ app.use(router.routes()).use(router.allowedMethods());
 
 const port = process.env.PORT || 7070;
 const server = http.createServer(app.callback())
-server.listen( port , () => console.log('server started'));
+server.listen(port, () => console.log('server started'));
